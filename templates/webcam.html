@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FalconEye</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+  <nav>
+    <img src="../static/images/logo.svg" class="logo" />
+    <a href="/">Home</a>
+    <a href="/detectByVideo">Detect by Video</a>
+    <a href="/detectByWebcam">Detect by Webcam</a>
+  </nav>
+
+  <section>
+    <div class="video-container">
+      <img src="{{ url_for('webcam') }}" class="video-container">
+    </div>
+  </section>
+</body>
+
+</html>
